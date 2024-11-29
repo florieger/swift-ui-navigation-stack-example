@@ -6,15 +6,28 @@
 //
 
 import SwiftUI
+import NavigationDestinations
 
 struct RedListScreen: View {
     var body: some View {
         ZStack {
-            VStack {
-                Text("RedListScreen")
+            Color.red.opacity(0.5)
+            VStack(spacing: 32) {
+                NavigationLink(value: RedFeatureDestinations.redDetails(itemId: 1)) {
+                    Text("Red Details ID 1")
+                        .foregroundStyle(.black)
+                }
+                .buttonStyle(.bordered)
+                .tint(.black)
+
+
+                NavigationLink(value: RedFeatureDestinations.redDetails(itemId: 2)) {
+                    Text("Red Details ID 2")
+                        .foregroundStyle(.black)
+                }
+                .buttonStyle(.bordered)
+                .tint(.black)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            Color(.red)
         }
         .navigationTitle("Red List Screen")
         .navigationBarTitleDisplayMode(.inline)
