@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		17CD66B82CF9E4E2009E26CE /* RedFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 17CD66B72CF9E4E2009E26CE /* RedFeature */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1784FF722CF9E21C000BD7A1 /* SwiftNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1784FF9A2CF9E32F000BD7A1 /* RedFeature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RedFeature; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17CD66B82CF9E4E2009E26CE /* RedFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +39,8 @@
 			isa = PBXGroup;
 			children = (
 				1784FF742CF9E21C000BD7A1 /* SwiftNavigation */,
+				1784FF9B2CF9E32F000BD7A1 /* Packages */,
+				17CD66B62CF9E4E2009E26CE /* Frameworks */,
 				1784FF732CF9E21C000BD7A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +51,21 @@
 				1784FF722CF9E21C000BD7A1 /* SwiftNavigation.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1784FF9B2CF9E32F000BD7A1 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1784FF9A2CF9E32F000BD7A1 /* RedFeature */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		17CD66B62CF9E4E2009E26CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +88,7 @@
 			);
 			name = SwiftNavigation;
 			packageProductDependencies = (
+				17CD66B72CF9E4E2009E26CE /* RedFeature */,
 			);
 			productName = SwiftNavigation;
 			productReference = 1784FF722CF9E21C000BD7A1 /* SwiftNavigation.app */;
@@ -320,6 +344,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17CD66B72CF9E4E2009E26CE /* RedFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RedFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1784FF6A2CF9E21C000BD7A1 /* Project object */;
 }
