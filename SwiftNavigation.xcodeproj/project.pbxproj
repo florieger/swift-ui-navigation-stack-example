@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		17CD66B82CF9E4E2009E26CE /* RedFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 17CD66B72CF9E4E2009E26CE /* RedFeature */; };
+		17CD66BD2CF9E684009E26CE /* NavigationDestinations in Frameworks */ = {isa = PBXBuildFile; productRef = 17CD66BC2CF9E684009E26CE /* NavigationDestinations */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1784FF722CF9E21C000BD7A1 /* SwiftNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1784FF9A2CF9E32F000BD7A1 /* RedFeature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RedFeature; sourceTree = "<group>"; };
+		17B655B22CF9EA5C00A169A7 /* NavigationDestinations */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NavigationDestinations; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -29,6 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17CD66B82CF9E4E2009E26CE /* RedFeature in Frameworks */,
+				17CD66BD2CF9E684009E26CE /* NavigationDestinations in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +59,8 @@
 		1784FF9B2CF9E32F000BD7A1 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				1784FF9A2CF9E32F000BD7A1 /* RedFeature */,
+				17CD66BA2CF9E638009E26CE /* Destinations */,
+				17CD66B92CF9E615009E26CE /* Features */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -66,6 +70,22 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17CD66B92CF9E615009E26CE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1784FF9A2CF9E32F000BD7A1 /* RedFeature */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		17CD66BA2CF9E638009E26CE /* Destinations */ = {
+			isa = PBXGroup;
+			children = (
+				17B655B22CF9EA5C00A169A7 /* NavigationDestinations */,
+			);
+			name = Destinations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +109,7 @@
 			name = SwiftNavigation;
 			packageProductDependencies = (
 				17CD66B72CF9E4E2009E26CE /* RedFeature */,
+				17CD66BC2CF9E684009E26CE /* NavigationDestinations */,
 			);
 			productName = SwiftNavigation;
 			productReference = 1784FF722CF9E21C000BD7A1 /* SwiftNavigation.app */;
@@ -349,6 +370,10 @@
 		17CD66B72CF9E4E2009E26CE /* RedFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RedFeature;
+		};
+		17CD66BC2CF9E684009E26CE /* NavigationDestinations */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NavigationDestinations;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
