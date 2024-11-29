@@ -6,16 +6,15 @@
 //
 
 import SwiftUI
+import RedFeature
 
 struct RootView: View {
+    @State var navigationPath = NavigationPath()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack(path: $navigationPath) {
+            RedFeature.initialScreen()
         }
-        .padding()
     }
 }
 
